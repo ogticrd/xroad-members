@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  ss:
+    image: niis/xroad-security-server-sidecar:7.2.2
+    networks:
+      xroad_net:
+    ports:
+      - "443:8443"
+      - "4000:4000"
+      - "5500:5500"
+      - "5577:5577"
+      - "5588:5588"
+    volumes:
+      - xroad_config:/etc/xroad
+      - xroad_files:/var/lib/xroad
+      - xroad_db:/var/lib/postgresql/12/main
+#    environment:
+#      XROAD_TOKEN_PIN: cambiame
+#      XROAD_ADMIN_USER: xroad-admin
+#      XROAD_ADMIN_PASSWORD: 123cambiame
+#      XROAD_LOG_LEVEL: INFO
+    restart: unless-stopped
+ 
+volumes:
+  xroad_config:
+  xroad_files:
+  xroad_db:
+ 
+networks:
+  xroad_net:
