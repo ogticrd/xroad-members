@@ -1,4 +1,6 @@
-# xroad-members
+![logo_ogtic](https://github.com/opticrd/xroad-members/assets/2160489/221a0cd9-9236-46da-a6c7-73e93c61f3e7)
+
+# Repositorio de miembros de la Plataforma Única de Interoperabilidad del Estado Dominicano
 
 Esta documentación ayudará a la instalación del servidor de seguridad requerido para ser miembro de la Plataforma Única de Interoperabilidad.
 
