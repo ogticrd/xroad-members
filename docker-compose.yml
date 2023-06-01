@@ -14,11 +14,11 @@ services:
       - xroad_config:/etc/xroad
       - xroad_files:/var/lib/xroad
       - xroad_db:/var/lib/postgresql/12/main
-#    environment:
-#      XROAD_TOKEN_PIN: cambiame
-#      XROAD_ADMIN_USER: xroad-admin
-#      XROAD_ADMIN_PASSWORD: 123cambiame
-#      XROAD_LOG_LEVEL: INFO
+    environment:
+      - XROAD_TOKEN_PIN
+      - XROAD_ADMIN_USER
+      - XROAD_ADMIN_PASSWORD
+      - XROAD_LOG_LEVEL
     restart: unless-stopped
  
 volumes:
