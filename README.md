@@ -45,3 +45,12 @@ Por último, procedemos a lanzar la aplicación:
 ```
 
 Si todo se ejecutó satisfactoriamente debería poder entrar a la interfaz de la aplicación desde un navegador web entrando a subdominio:4000.
+  
+## Para desinstalar el aplicativo
+```sh
+  sudo docker-compose down -v;
+  cd ..;
+  rm -rf xroad-members;
+```
+  
+A partir de aquí se puede volver al primer paso para instalar nuevamente.
