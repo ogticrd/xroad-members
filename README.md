@@ -15,42 +15,42 @@ Aprovechamos la tecnología de contenedores para realizar el despliegue del serv
   
 Para esto necesitaremos docker y docker compose. Procederemos a instalarlo mediante la herramienta "snap":
 ```sh
-  sudo snap install docker
+sudo snap install docker
 ```
 
 Luego descargamos este repositorio:
 ```sh
-  git clone https://github.com/opticrd/xroad-members.git
+git clone https://github.com/opticrd/xroad-members.git
 ```
 
 Accedemos al directorio del repositorio que acabamos de descargar:
 ```sh
-  cd xroad-members
+cd xroad-members
 ```
 
 Creamos nuestro archivo de configuración:
 ```sh
-  cp .env.example .env
+cp .env.example .env
 ```
 
 Editamos la configuración (con nano, vim o el editor de su preferencia):
 ```sh
-  nano .env
+nano .env
 ```
 En este archivo encontrará las configuraciones básicas a realizar. Debe cambiar al menos el PIN y el Password del usuario administrador.
 
 Por último, procedemos a lanzar la aplicación:
 ```sh
-  sudo docker-compose up -d
+sudo docker-compose up -d
 ```
 
 Si todo se ejecutó satisfactoriamente debería poder entrar a la interfaz de la aplicación desde un navegador web entrando a subdominio:4000.
   
 ## Para desinstalar el aplicativo
 ```sh
-  sudo docker-compose down -v;
-  cd ..;
-  rm -rf xroad-members;
+sudo docker-compose down -v;
+cd ..;
+rm -rf xroad-members;
 ```
   
 A partir de aquí se puede volver al primer paso para instalar nuevamente.
