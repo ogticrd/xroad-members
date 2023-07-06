@@ -11,6 +11,8 @@ Antes de iniciar debe asegurarse que cumple con los siguientes requisitos:
 - El servidor debe poder ser accedido desde internet por los puertos: 5500, 5577
 - El servidor debe poder ser accedido desde la red local por los puertos: 443, 4000
 
+## Instalación
+
 Aprovechamos la tecnología de contenedores para realizar el despliegue del servidor de seguridad.
   
 Para esto necesitaremos docker y docker compose. Procederemos a instalarlo mediante la herramienta "snap":
@@ -45,12 +47,21 @@ sudo docker-compose up -d
 ```
 
 Si todo se ejecutó satisfactoriamente debería poder entrar a la interfaz de la aplicación desde un navegador web entrando a subdominio:4000.
-  
-## Para desinstalar el aplicativo
+
+Con esto queda completado el proceso de instalación. El próximo paso es configurar el servicio instalado e incluirse como miembro de la plataforma.
+
+### Notas:
+- Si luego de completar el proceso no puede ver la intefaz de inicio de sesión en el navegador mostrado en el último paso de la guía de instalación, diríjase a la sesión de problemas frecuentes.
+- En caso de que necesite revertir todo el proceso de instalación puede ir a la guía de desinstalación.
+
+## Desinstalación
+
+En caso de que necesite revertir todo el proceso de instalación se puede realizar eliminando el contenedor desplegado en la instalación y adicionalmente borrar los volumenes donde se encuentran todos los archivos de configuración y los datos que había recopilado en la plataforma hasta el momento.
+
 ```sh
 sudo docker-compose down -v;
 cd ..;
 rm -rf xroad-members;
 ```
-  
-A partir de aquí se puede volver al primer paso para instalar nuevamente.
+
+Con esto ha quedado completamente eliminado del sistema el componente técnico de la Plataforma Única de Interoperabilidad.
