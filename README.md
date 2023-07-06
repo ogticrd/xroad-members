@@ -15,33 +15,33 @@ Antes de iniciar debe asegurarse que cumple con los siguientes requisitos:
 
 Aprovechamos la tecnología de contenedores para realizar el despliegue del servidor de seguridad.
   
-Para esto necesitaremos docker y docker compose. Procederemos a instalarlo mediante la herramienta "snap":
+1. Necesitaremos docker y docker compose. Procederemos a instalarlo mediante la herramienta "snap":
 ```sh
 sudo snap install docker
 ```
 
-Luego descargamos este repositorio:
+2. Descargamos este mismo repositorio con el siguiente comando:
 ```sh
 git clone https://github.com/opticrd/xroad-members.git
 ```
 
-Accedemos al directorio del repositorio que acabamos de descargar:
+3. Accedemos al directorio del repositorio que acabamos de descargar:
 ```sh
 cd xroad-members
 ```
 
-Creamos nuestro archivo de configuración:
+4. Creamos nuestro archivo de configuración a partir del archivo plantilla que se encuentra en el repositorio:
 ```sh
 cp .env.example .env
 ```
 
-Editamos la configuración (con nano, vim o el editor de su preferencia):
+5. Editamos la configuración (con nano, vim o el editor de su preferencia):
 ```sh
 nano .env
 ```
-En este archivo encontrará las configuraciones básicas a realizar. Debe cambiar al menos el PIN y el Password del usuario administrador.
+En este archivo encontrará las configuraciones básicas a realizar. Debe cambiar al menos el PIN y el Password del usuario administrador. Si cambia el nombre de usuario no debe usar "xroad" por ser un usuario existente utilizado para tareas del sistema.
 
-Por último, procedemos a lanzar la aplicación:
+6. Por último, procedemos a lanzar la aplicación:
 ```sh
 sudo docker-compose up -d
 ```
@@ -57,6 +57,8 @@ Con esto queda completado el proceso de instalación. El próximo paso es config
 ## Desinstalación
 
 En caso de que necesite revertir todo el proceso de instalación se puede realizar eliminando el contenedor desplegado en la instalación y adicionalmente borrar los volumenes donde se encuentran todos los archivos de configuración y los datos que había recopilado en la plataforma hasta el momento.
+
+Primero debe buscar el directorio (o carpeta) donde descargó el repositorio al momento de la instalación. Una vez entre al directorio del repositorio descargado debe encontrar el archivo "docker-compose.yml". En ese caso está listo para proceder con la desintalación con los siguientes comandos:
 
 ```sh
 sudo docker-compose down -v;
