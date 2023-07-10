@@ -36,3 +36,7 @@ En esta sesión estará el almacén de llaves y certificados llamado “Soft Tok
 3. Crear un archivo .zip con los 2 CSR que se acaban de generar y descargar
 4. Enviar el archivo .zip a la dirección interoperabilidad@ogtic.gob.do. Copiar a kevin.jimenez@ogtic.gob.do
 5. Esperar que los certificados sean firmados y recibidos por la misma vía.
+
+Una ves recibido los certificados firmados deben ser importados dando click al botón de importación de certificados ubicado en la misma sección donde se crearon las llaves y los CSRs.
+
+Luego se debe activar el certificado de autenticación y posteriormente se debe registrar. Este paso envía el registro del nuevo servidor al Servidor Central y un operador hace el proceso de verificación. En caso de que todo se encuentre correcto, se aprobará el registro y se reflejará en la sección del certificado de autenticación.
