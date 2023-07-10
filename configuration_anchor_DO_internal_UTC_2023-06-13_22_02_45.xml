@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:configurationAnchor xmlns:ns2="http://x-road.eu/xsd/identifiers" xmlns:ns3="http://x-road.eu/xsd/xroad.xsd">
+    <generatedAt>2023-06-13T22:02:45.384Z</generatedAt>
+    <instanceIdentifier>DO</instanceIdentifier>
+    <source>
+        <downloadURL>http://cs.xroad.digital.gob.do/internalconf</downloadURL>
+        <verificationCert>MIICqTCCAZGgAwIBAgIBATANBgkqhkiG9w0BAQ0FADAOMQwwCgYDVQQDDANOL0EwHhcNNzAwMTAxMDAwMDAwWhcNMzgwMTAxMDAwMDAwWjAOMQwwCgYDVQQDDANOL0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCJ5irJQhTDwsWeKuTKHT+AZx9MvJOF+fst0/YmMkeQpt/zOVg6jpw8MxvrXDr7SrbI7hDD92wmsfeyNzqoP2q65AuXI1FgHCqJCaBzGhsuXigLozTqHSlQu9dSHIus0vaF2maMOncwZ9n7VPyO4JWtqv4CO9in0qEq433uZokykF42vCvZdB485jl+yPXUpwAQWSb51Z+udfpzixst24w06IoQJ2MRsTy2vhVBNz2aVAtXsPpFUFXki+IWju0oXAhuoSu530HTS6f0FQRvcsDnvEBLCtcFffNofmgYEQVqfRLWFohJ/bLqzRKf4UgfzUld3SJo7tzLIRu8LLjHsrXLAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIGQDANBgkqhkiG9w0BAQ0FAAOCAQEAJ8ggs7VVVa4bOujFA8tlBBYttPVsxvsjbT0z374e9VVkd3vPasAxYx5SxXe3kH9/rKrUkxUqfkWiYxZ/9yj2n4wuytB79oq+/UxeANG4yK+8imlwclZPMLubYsCPVzud6b8PWF8T13ozNGjM3FWmRjEyqcNfFbRr8ApJnX34ybMI0IWgSlaxbHlz9p5HI0MisU295jhN0kFzMtckvEtJSQCIAN0nES3pjn3V+1zJ9FAWpzpXLp1mYEVWs/YjnRZ/jt/f2h3UvWhSv2+1L3k4swRdXRPZLgXcmVNuwvWvNDLOLVqzzvg4Gu52BN253iBGtNUqzrFCB4W91H5TvDQVJA==</verificationCert>
+    </source>
+</ns3:configurationAnchor>
