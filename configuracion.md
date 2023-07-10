@@ -39,4 +39,10 @@ En esta sesión estará el almacén de llaves y certificados llamado “Soft Tok
 
 Una ves recibido los certificados firmados deben ser importados dando click al botón de importación de certificados ubicado en la misma sección donde se crearon las llaves y los CSRs.
 
-Luego se debe activar el certificado de autenticación y posteriormente se debe registrar. Este paso envía el registro del nuevo servidor al Servidor Central y un operador hace el proceso de verificación. En caso de que todo se encuentre correcto, se aprobará el registro y se reflejará en la sección del certificado de autenticación.
+Luego se debe entrar al apartado del certificado de autenticación, activarlo, cerrar el apartado, dar click en "Register" y colocar el subdominio (ss1.institucion.gob.do) en el cuadro que aparece. Este paso envía el registro del nuevo servidor al Servidor Central y un operador hace el proceso de verificación. En caso de que todo se encuentre correcto, se aprobará el registro y se reflejará en la sección del certificado de autenticación.
+
+En lo que se tramita el registro se puede configurar el servicio de sellado de tiempo. Para esto se debe dirigir a la sección de ajustes en el menú principal y dar click en "Add", seleccionar el servicio de sellado más adecuado de los que están disponibles en la lista y confirmar.
+
+Llegado a este punto ha concluido el proceso de configuración general.
+
+A continuación puede comenzar a registrar subsistemas y servicios.
