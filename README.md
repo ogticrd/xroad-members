@@ -41,7 +41,12 @@ nano .env
 ```
 En este archivo encontrará las configuraciones básicas a realizar. Debe cambiar al menos el PIN y el Password del usuario administrador. Si cambia el nombre de usuario no debe usar "xroad" por ser un usuario existente utilizado para tareas del sistema.
 
-6. Por último, procedemos a lanzar la aplicación:
+6. Ahora procedemos a instalar nginx-light y a iniciar su servicio
+```
+apt install nginx-light -y;
+```
+
+7. Por último, procedemos a lanzar la aplicación:
 ```sh
 sudo docker-compose up -d
 ```
