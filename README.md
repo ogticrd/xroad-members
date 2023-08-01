@@ -6,7 +6,7 @@ Esta documentación ayudará a la instalación del servidor de seguridad requeri
 
 Antes de iniciar debe asegurarse que cumple con los siguientes requisitos:
 - Servidor virtual con Ubuntu 22.04 LTS (al menos 2-4cpu, 3-4GB RAM, +20GB SSD)
-- Subdominio público (ss1.<dominio de la institucion> - ej: ss1.ogtig.gob.do)
+- Subdominio público (ss1.<dominio de la institucion> - ej: ss1.ogtic.gob.do)
 - El servidor debe poder acceder a internet
 - El servidor debe poder ser accedido desde internet por los puertos: 5500, 5577
 - El servidor debe poder ser accedido desde la red local por los puertos: 443, 4000
