@@ -97,6 +97,6 @@ resource "google_compute_instance" "xroad" {
     ssh-key = "your-username:${file("~/.ssh/ssh-key.pub")}" #Replace
  }
      
-  metadata_startup_script = file("path/to/install-docker.sh")
+  metadata_startup_script = file("./install-docker.sh")
 
 }
