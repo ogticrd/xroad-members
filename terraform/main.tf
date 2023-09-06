@@ -18,7 +18,7 @@ resource "google_compute_firewall" "rules" {
 
   allow {
     protocol = "tcp"
-    ports    = "5500", "5577", "443", "4000"]
+    ports    = ["5500", "5577", "443", "4000"]
   }
 
   source_ranges = ["0.0.0.0/0"] # Allow access from anywhere (adjust for production)
