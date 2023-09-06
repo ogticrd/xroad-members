@@ -6,29 +6,46 @@ data "google_project" "project" {
 # VPC NETWORKS
 #---------------------------
 
-# Use a data source to fetch information about the existing network
-data "google_compute_network" "existing_network" {
-  name = "default" 
-}
-
-# Use a data source to fetch information about the existing default subnet
-data "google_compute_subnetwork" "default_subnet" {
-  name    = "default"
-  region  = var.region 
-  project = var.project_id
+resource "google_compute_network" "network" {
+  name = var.network
+  auto_create_subnetworks = true
 }
 
 # Define a firewall rule for xroad
 resource "google_compute_firewall" "rules" {
   name    = "allow-xroad"
-  network = data.google_compute_network.existing_network.self_link
+  network = google_compute_network.network.self_link
 
   allow {
     protocol = "tcp"
-    ports    = ["5500, 5577, 443, 4000"]
+    ports    = "5500", "5577", "443", "4000"]
   }
 
   source_ranges = ["0.0.0.0/0"] # Allow access from anywhere (adjust for production)
+}
+
+resource "google_compute_firewall" "ssh" {
+  name    = "allow-ssh"
+  network = google_compute_network.network.self_link
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22"]
+  }
+
+  source_ranges = ["0.0.0.0/0"] # Allow access from anywhere (adjust for production)
+}
+
+resource "google_compute_firewall" "allow-outgoing" {
+  name    = "allow-outgoing"
+  network = google_compute_network.network.self_link
+
+  allow {
+    protocol = "all"
+  }
+
+  source_ranges = ["0.0.0.0/0"]  
+  direction     = "EGRESS"       
 }
 
 resource "google_compute_address" "static_ip" {
@@ -40,7 +57,7 @@ resource "google_compute_address" "static_ip" {
 # Disk
 #---------------------------
 resource "google_compute_disk" "data_disk" {
-  name  = "xroad-data-disk"
+  name  = "xroad-data-disk" # Specify a name for the disk
   type  = "pd-standard"  # Specify the disk type (pd-ssd or pd-standard)
   size  = 100            # Specify the size of the data disk in GB
   zone  = var.instance_zone 
@@ -65,12 +82,11 @@ resource "google_compute_instance" "xroad" {
   # Attach the persistent data disk to the instance
   attached_disk {
     source = google_compute_disk.data_disk.self_link
-    device_name = "xroad-data-disk"  # Specify a device name for the disk
+    device_name = google_compute_disk.data_disk.name
   }
 
   network_interface {
-    network = data.google_compute_network.existing_network.self_link
-    subnetwork = data.google_compute_subnetwork.default_subnet.self_link
+    network = google_compute_network.network.self_link
 
     access_config{
       nat_ip = google_compute_address.static_ip.address
@@ -79,5 +95,8 @@ resource "google_compute_instance" "xroad" {
 
   metadata = {
     ssh-key = "your-username:${file("~/.ssh/ssh-key.pub")}" #Replace
-  }
+ }
+     
+  metadata_startup_script = file("path/to/install-docker.sh")
+
 }
