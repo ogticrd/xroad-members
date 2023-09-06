@@ -9,11 +9,15 @@ variable "project_id" {
 #-------------------------
 # VPC variables
 #-------------------------
+variable "network" {
+  description = "Network resource name. Regular expression [a-z]([-a-z0-9]*[a-z0-9])?"
+  type        = string
+}
 
 variable "region" {
-  description = "Region to deploy GCP resources: default us-central1"
+  description = "Region to deploy GCP resources: default South Carolina	us-east1"
   type        = string
-  default     = "us-central1"
+  default     = "us-east1"
 }
 
 #-------------------------
@@ -21,7 +25,7 @@ variable "region" {
 #-------------------------
 
 variable "instance_name" {
-  description = "Instance name"
+  description = "VM Instance name. Must consist of lowercase letters (a-z), numbers, and hyphens"
   type = string
 }
 
@@ -32,9 +36,9 @@ variable "machine_type" {
 }
 
 variable "instance_zone" {
-  description = "the Zone where VM resources will be created: default us-central1-a"
+  description = "the Zone where VM resources will be created: default us-east1-b"
   type = string
-  default = "us-central1-a"
+  default = "us-east1-b"
 }
 
 variable "os_image" {
