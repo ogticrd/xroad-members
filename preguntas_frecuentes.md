@@ -18,6 +18,18 @@ R: Sí. La plataforma está configurada por defecto para registrar todos los men
 ### P: ¿Qué tan segura es la plataforma?
 R: Uno de los aspectos principales de esta plataforma es la seguridad (si no es el más importante). Solo pueden participar en la plataforma miembro verificados y autenticados. Cada uno de los mensajes enviados son firmados digitalmente con criptografía segura, también se agrega un sello de tiempo que valida la existencia del mensaje en un momento determinado. Todos estos procesos son verificables y auditables.
 
+### P: ¿Quién administra la plataforma?
+R: Según el decreto presidencial No. 92-22, que establece el Marco Nacional de Interoperabilidad, en el Artículo 5, el 2do punto, encarga la gestión de la Plataforma Única de Interoperabilidad a OGTIC bajo los lineamientos de gobernanza definidos por el MAP. 
+
+### P: ¿Es OGTIC intermediario de los mensajes intercambiados? ¿Qué hace OGTIC con esa información?
+R: La Plataforma Única de Interoperabilidad es un canal de comunicación P2P (de punto a punto). Esto significa que la comunicación entre 2 entes ocurre de manera directa, sin intermediarios de ningún tipo. En algún momento, OGTIC pudiera hacer uso de la información anonimizada generada o registrada por la plataforma únicamente con fines estadisticos.
+
+### P: ¿OGTIC será la responsable de proveer los datos que están disponible en la plataforma?
+R: La Plataforma Única de Interoperabilidad es un canal de comunicación P2P (de punto a punto). Esto significa que la información que está disponible en la plataforma viene directamente de la entidad que la custodia, siempre que esta entidad haya otorgado permisos de lectura explícitos a la institución consultante.
+
+### P: ¿Cómo se garantizará que la información esté siempre disponible?
+R: La Plataforma Única de Interoperabilidad es un canal de comunicación descentralizado. Cada entidad que custodia la información tiene la responsabilidad de mantener disponible la información. Como canal de comunicación descentralizado, la plataforma no tiene incidencia directa en la disponibilidad de la información.
+
 ## Preguntas técnicas
 
 ### P: No recibo la respuesta esperada ¿Cómo se si se trata de un error con X-Road?
