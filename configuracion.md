@@ -4,15 +4,18 @@ Antes de iniciar la configuración debe asegurarse que ha completado el proceso 
 
 Para iniciar el proceso de configuración realice los siguientes pasos:
 
-1. Acceda a la interfaz de su servidor de seguridad, que instaló en la sección anterior, desde un navegador colocando la ruta https://<subdominio>:4000 (el puerto 4000 es el que viene por defecto, si se configuró algún otro puerto para acceder a la interfaz de usuario debe utilizar ese).
-2. Debe subir el archivo XML “Ancla de configuración”. Para esto debe dar click en buscar y seleccionar el archivo. Sale un mensaje de confirmación el cual debe aceptar.
+1. Acceda a la interfaz de su servidor de seguridad, que instaló en la sección anterior, desde un navegador colocando la ruta https://<subdominio>:4000 (el puerto 4000 es el que viene por defecto, si se configuró algún otro puerto para acceder a la interfaz de usuario debe utilizar ese). Inice sesión utilizando los valores `XROAD_ADMIN_USER` y `XROAD_ADMIN_PASSWORD` de su archivo de configuración.
+
+2. En el siguiente paso vamos a subir el archivo XML “Ancla de configuración” proporcionado por el administrador del Servidor Central. Para esto debe dar click en buscar y seleccionar el archivo. Sale un mensaje de confirmación el cual debe aceptar.
 [Nota: si nota que el mensaje de confirmación se queda cargando luego de aceptarlo y no continúa es probable que se deba a falta de comunicación entre su servidor y el servidor central. Debe asegurarse que haya comunicación entre ambos antes de continuar la configuración].
+
 3. En la siguiente sección encontrará un formulario con 3 campos a completar.
     1. Clase de miembro: Esto hace referencia al grupo de entidad al que pertenece. Para una entidad del estado debe seleccionar “GOB”.
     2. Código de miembro: Aquí debe colocar oficiales de su institución. Si está bien escritas y registrada en el servidor central notará que el nombre de la institución aparecerá de forma automática en la parte de arriba del formulario.
     [Nota: si no aparece el nombre en la parte de arriba el registro podría fallar. Por favor informarlo a interoperabilidad@ogtic.gob.do]
     3. Código del servidor de seguridad: Aquí normalmente se coloca “SS” + más el número de orden del servidor. Si es el primer servidor que configuran esto debería quedar así: “SS1”, el siguiente sería “SS2” y así sucesivamente.
-4. La siguiente sección es donde se coloca el PIN de seguridad para las llaves y certificados del servidor de seguridad. Este PIN es alfanumérico y debe seguir las mismas políticas de credenciales seguras que tienen en la institución. Este PIN normalmente se configura primero durante la instalación y se debe usar ese mismo en esta sección. Debe repetir el mismo PIN en ambos campos de esta pantalla, luego presiona el botón de continuar.
+
+4. La siguiente sección es donde se coloca el PIN de seguridad para las llaves y certificados del servidor de seguridad. Este PIN es alfanumérico y debe seguir las mismas políticas de credenciales seguras que tienen en la institución. Este `ROAD_TOKEN_PIN` normalmente se configura primero durante la instalación en su archivo de configuración `.env` y se debe usar ese mismo en esta sección. Debe repetir el mismo PIN en ambos campos de esta pantalla, luego presiona el botón de continuar. Si ingresas un PIN incorrecto en la interfaz de XRoad puede resultar en la denegación de acceso, bloqueo temporal de la cuenta, o la necesidad de restablecer el PIN. Es importante ingresar el PIN correcto para garantizar el acceso seguro a las funciones y recursos de XRoad.
 
 A este punto se ha completado satisfactoriamente la primera parte de la configuración. Ahora vamos a registrar nuestro nuevo servidor de seguridad en el servidor central siguiendo estos pasos:
 
