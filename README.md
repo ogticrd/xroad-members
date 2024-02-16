@@ -9,22 +9,19 @@
 5. [Desinstalación](#desinstalación)
 
 
-## Introducción a XRoad y la Plataforma Única de Interoperabilidad:
-XRoad es un marco de interoperabilidad diseñado para permitir la comunicación segura entre sistemas diferentes en entornos gubernamentales y empresariales. Las instituciones pueden usar diferentes tipos de computadoras, software o tecnologías de comunicación. Por ejemplo, un sistema puede funcionar en un servidor Linux mientras que otro funciona en un servidor Windows, o pueden utilizar lenguajes de programación diferentes. La interoperabilidad entre estos sistemas puede ser un desafío debido a sus diferencias, y XRoad ayuda a superar estos desafíos facilitando la comunicación segura entre ellos.
+## Introducción a XRoad y la Plataforma Única de Interoperabilidad
+X-Road es un marco de interoperabilidad diseñado para permitir la comunicación segura entre sistemas diferentes en entornos gubernamentales y empresariales. Las instituciones pueden usar diferentes tipos de sistemas, software o tecnologías de comunicación. X-Road ayuda a superar los desafíos que supone el trabajo coordinado entre entidades facilitando la comunicación segura entre ellos y brindando un mecanismo estándar para el intercambio de datos.
 
-En un mundo donde la seguridad y la interoperabilidad son fundamentales, XRoad desempeña un papel crucial al proporcionar un entorno confiable para la comunicación entre sistemas informáticos. Facilita la colaboración entre organizaciones, promueve la eficiencia operativa y mejora la prestación de servicios a ciudadanos y empresas.
-
-Esta documentación ayudará a la instalación del servidor de seguridad requerido para ser miembro de la Plataforma Única de Interoperabilidad.
-
+Esta documentación apoyará a las entidades en la instalación, configuración e inscripción como miembro de la Plataforma Única de Interoperabilidad. Una vez completado estos pasos podrá hacer uso de la misma y disfrutar de todos sus beneficios.
 
 ## Requisitos
 
 Antes de iniciar debe asegurarse que cumple con los siguientes requisitos:
 - Servidor virtual con Ubuntu 22.04 LTS (al menos 2-4cpu, 3-4GB RAM, +20GB SSD)
-- Subdominio público (ss1.<dominio de la institucion> - ej: ss1.ogtic.gob.do)
+- Subdominio público (ss1.dominio.de.la.institucion - ej: ss1.ogtic.gob.do)
 - El servidor debe poder acceder a internet
-- El servidor debe poder ser accedido desde internet por los puertos: 5500, 5577
-- El servidor debe poder ser accedido desde la red local por los puertos: 443, 4000
+- El servidor debe poder ser accedido desde internet por los puertos: `5500`, `5577`
+- El servidor debe poder ser accedido desde la red local por los puertos: `443`, `4000`
 
 ## Instalación
 
