@@ -2,11 +2,15 @@
 
 # Repositorio de miembros de la Plataforma Única de Interoperabilidad del Estado Dominicano
 
+### Indice
 1. [Introducción](#introducción-a-xroad-y-la-plataforma-única-de-interoperabilidad)
 2. [Requisitos](#requisitos)
 3. [Instalación](#instalación)
-4. [Notas Adicionales](#notas-adicionales)
-5. [Desinstalación](#desinstalación)
+4. [Configuración](/configuracion.md)
+
+### Otros
+1. [Notas Adicionales](#notas-adicionales)
+2. [Desinstalación](#desinstalación)
 
 
 ## Introducción a XRoad y la Plataforma Única de Interoperabilidad
