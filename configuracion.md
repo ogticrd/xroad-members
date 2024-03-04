@@ -1,12 +1,15 @@
 ## Configuración e inscripción como miembro
 
+<sup><sub>Este es el paso 4 de ésta guía de implementación de X-Road. Se espera que se haya completado el [paso anterior relativo a la instalación](/README.md#instalación). También puedes volver al [inicio](/README.md).</sub></sup>
+
+
 Antes de iniciar la configuración debe asegurarse que ha completado el proceso de instalación correctamente y ha seguido la guía técnica de preparación para la configuración.
 
 Para iniciar el proceso de configuración realice los siguientes pasos:
 
 1. Acceda a la interfaz de su servidor de seguridad, que instaló en la sección anterior, desde un navegador colocando la ruta https://< subdominio >:4000 (el puerto 4000 es el que viene por defecto, si se configuró algún otro puerto para acceder a la interfaz de usuario debe utilizar ese). Inice sesión utilizando los valores `XROAD_ADMIN_USER` y `XROAD_ADMIN_PASSWORD` de su archivo de configuración.
 
-2. En el siguiente paso vamos a subir el archivo XML “Ancla de configuración” que se encuentra en este mismo repositorio (o carpeta), llamado `configuration_anchor_DO`. Para esto debe dar click en buscar y seleccionar el archivo. Sale un mensaje de confirmación el cual debe aceptar.
+2. En el siguiente paso vamos a subir el archivo XML “[Ancla de configuración](/configuration_anchor_DO_internal_UTC_2023-06-13_22_02_45.xml)” que se encuentra en este mismo repositorio (o carpeta), llamado `configuration_anchor_DO`. Para esto debe dar click en buscar y seleccionar el archivo. Sale un mensaje de confirmación el cual debe aceptar.
 [Nota: si nota que el mensaje de confirmación se queda cargando luego de aceptarlo y no continúa es probable que se deba a falta de comunicación entre su servidor y el servidor central. Debe asegurarse que haya comunicación entre ambos antes de continuar la configuración].
 
 3. En la siguiente sección encontrará un formulario con 3 campos a completar.
@@ -48,4 +51,4 @@ En lo que se tramita el registro se puede configurar el servicio de sellado de t
 
 Llegado a este punto ha concluido el proceso de configuración general.
 
-A continuación puede comenzar a registrar subsistemas y servicios.
+A continuación puede comenzar a [registrar subsistemas](/subsistemas.md) y servicios.
