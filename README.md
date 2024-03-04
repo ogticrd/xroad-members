@@ -7,7 +7,7 @@
 2. [Requisitos](#requisitos)
 3. [Instalación](#instalación)
 4. [Configuración](/configuracion.md)
-5. [Crear subsistema](/03_crear_subsistema.md)
+5. [Crear subsistema](/subsistemas.md)
 6. [Crear servicio](/04_crear_servicio.md)
 7. [Otorgar acceso](/05_otorgar_acceso.md)
 
