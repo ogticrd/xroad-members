@@ -3,13 +3,13 @@
 # Repositorio de miembros de la Plataforma Única de Interoperabilidad del Estado Dominicano
 
 ### Indice
-1. [Introducción](#introducción-a-xroad-y-la-plataforma-única-de-interoperabilidad)
-2. [Requisitos](#requisitos)
-3. [Instalación](#instalación)
-4. [Configuración](/configuracion.md)
-5. [Crear subsistema](/subsistemas.md)
-6. [Crear servicio](/04_crear_servicio.md)
-7. [Otorgar acceso](/05_otorgar_acceso.md)
+1. 🏠 [Introducción](#introducción-a-xroad-y-la-plataforma-única-de-interoperabilidad)
+2. 📃 [Requisitos](#requisitos)
+3. 👷‍♂️ [Instalación](#instalación)
+4. 🧰 [Configuración](/configuracion.md)
+5. 💻 [Crear subsistema](/subsistemas.md)
+6. ✍️ [Crear servicio](/04_crear_servicio.md)
+7. 🤝 [Otorgar acceso](/05_otorgar_acceso.md)
 
 ### Otros
 1. [Notas Adicionales](#notas-adicionales)
@@ -17,7 +17,7 @@
 
 
 ## Introducción a XRoad y la Plataforma Única de Interoperabilidad
-X-Road es un marco de interoperabilidad diseñado para permitir la comunicación segura entre sistemas diferentes en entornos gubernamentales y empresariales. Las instituciones pueden usar diferentes tipos de sistemas, software o tecnologías de comunicación. X-Road ayuda a superar los desafíos que supone el trabajo coordinado entre entidades facilitando la comunicación segura entre ellos y brindando un mecanismo estándar para el intercambio de datos.
+X-Road es un marco de interoperabilidad diseñado para permitir la comunicación segura entre sistemas diferentes en entornos gubernamentales y empresariales. X-Road ayuda a superar los desafíos que supone la interoperabilidad entre entidades facilitando la comunicación segura entre ellos y brindando un mecanismo estándar para el intercambio de datos.
 
 Esta documentación apoyará a las entidades en la instalación, configuración e inscripción como miembro de la Plataforma Única de Interoperabilidad. Una vez completado estos pasos podrá hacer uso de la misma y disfrutar de todos sus beneficios.
 
@@ -67,7 +67,9 @@ sudo docker-compose up -d
 
 Si todo se ejecutó satisfactoriamente debería poder entrar a la interfaz de la aplicación desde un navegador web entrando a subdominio:4000.
 
-Con esto queda completado el proceso de instalación. El próximo paso es configurar el servicio instalado e incluirse como miembro de la plataforma.
+Con esto queda completado el proceso de instalación. El [próximo paso es configurar](/configuracion.md) e incluirse como miembro de la plataforma.
+
+Ir a la [guía de configuración](/configuracion.md)
 
 ### Notas Adicionales:
 - Si luego de completar el proceso no puede ver la intefaz de inicio de sesión en el navegador mostrado en el último paso de la guía de instalación, diríjase a la sesión de problemas frecuentes.
@@ -81,8 +83,6 @@ Primero debe buscar el directorio (o carpeta) donde descargó el repositorio al 
 
 ```sh
 sudo docker-compose down -v;
-cd ..;
-rm -rf xroad-members;
 ```
 
 Con esto ha quedado completamente eliminado del sistema el componente técnico de la Plataforma Única de Interoperabilidad.
