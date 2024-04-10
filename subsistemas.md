@@ -9,8 +9,9 @@ Todos los miembros de la plataforma podrán ver los subsistemas que han creado l
 - Debe ser un nombre descriptivo de proyecto (este punto es muy importante)
 - Debe estar escrito totalmente en mayúsculas
 - No debe contener espacios ni caracteres especiales (Ej: "*&#$)(][@! ")
+- Evitar las abreviaturas
 
-**NOTA:** Es importante que este nombre de subsistema sea muy descriptivo y preferiblemente que concuerde con el nombre del proyecto relacionado. No debe contener nombres ambiguos o genéricos como: “PRODUCCION”, “PRUEBA”, “TEST”, “DATOS”. De ser recibidos serán rechazados por algún operador del Servidor Central de la plataforma, dejando inutilizable el subsistema en cuestión.
+**NOTA:** Es importante que este nombre de subsistema sea muy descriptivo y preferiblemente que concuerde con el nombre del proyecto relacionado. No debe contener nombres ambiguos o genéricos como: “PRODUCCION”, “PRUEBA”, “TEST”, "PROD", "PRD" o "QA". También se debe evitar nombres que contengan la palabra "API", "DATOS", "DATA", "INFORMACION", "INFO" o algún otro sinónimo. De ser recibidos, seguramente serán rechazados por algún operador del Servidor Central de la plataforma, dejando inutilizable el subsistema en cuestión.
 
 ### Crear un subsistema
 
@@ -20,7 +21,13 @@ Todos los miembros de la plataforma podrán ver los subsistemas que han creado l
 1. Debe mantener la opción de registrar subsistema activa
 1. Finalmente debe dar click en “Add subsystem”
 
-Registrar el subsistema en el servidor central es un proceso opcional, sin embargo, este no podrá ser utilizado en ningún proceso de interoperabilidad hasta que el mismo no tenga completado el registro.
+Registrar el subsistema en el servidor central es un proceso opcional en principio, sin embargo, este no podrá ser utilizado en ningún proceso de interoperabilidad hasta que el mismo no tenga completado el registro.
 El subsistema agregado solo funcionará si tiene un registro activo en el Servidor Central de la plataforma. Si agregó un nuevo subsistema, deberá enviar un registro el cual es revisado por un operador del Servidor Central a fin de garantizar que el subsistema cumple con las convenciones establecidas.
+
+#### Incidencias más frecuentes
+1. Error al momento de registrar: En este caso, el subsistema se crea localmente en su Servidor de Seguridad pero no se envía el registro al servidor central con el fin de ser aprobado. Las causas más probables son: error de conexión con el servidor central (cs.xroad.digital.gob.do) o el certificado de autenticación se encuentra deshabilitado.
+2. No cumplir con el estandar de nombres para los subsistemas descrito en esta misma guía.
+
+## Próximo Paso
 
 Una vez completada la creación de subsistemas puedes continuar al siguiente paso, la [creación de servicios](/04_crear_servicio.md).
