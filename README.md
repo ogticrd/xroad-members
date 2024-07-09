@@ -24,11 +24,12 @@ Esta documentación apoyará a las entidades en la instalación, configuración 
 ## Requisitos
 
 Antes de iniciar debe asegurarse que cumple con los siguientes requisitos:
-- Servidor virtual con Ubuntu 22.04 LTS (al menos 2-4cpu, 3-4GB RAM, +20GB SSD)
-- Subdominio público (ss1.dominio.de.la.institucion - ej: ss1.ogtic.gob.do) con una IP Pública dedicada y exclusiva para este servicio
-- El servidor debe poder acceder a internet
-- El servidor debe poder ser accedido desde internet por los puertos: `5500`, `5577`
-- El servidor debe poder ser accedido desde la red local por los puertos: `443`, `4000`
+- Servidor virtual con Ubuntu 22.04 LTS (al menos 2-4cpu, 3-4GB RAM, +20GB SSD).
+- Subdominio público (ss1.dominio.de.la.institucion - ej: ss1.ogtic.gob.do) con una IP Pública dedicada y exclusiva para este servicio.
+- El servidor debe poder acceder a internet, esto implica todos los hosts y todos los puertos; no debe haber limitaciones.
+- El servidor debe poder ser accedido desde internet por los puertos: `5500`, `5577`, sin limitaciones de protocolos ni redirecciones de ningún tipo.
+- El servidor debe poder ser accedido solo desde la red local por los puertos: `443`, `4000`. Esto es muy importante por temas de seguridad.
+- No utilizar ninguna VPN o proxy de ningún tipo para acceder a este servidor desde internet; la conexión debe ser directa.
 
 ## Instalación
 
