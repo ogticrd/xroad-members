@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   ss:
-    image: niis/xroad-security-server-sidecar:7.2.2
+    image: niis/xroad-security-server-sidecar:7.6.0
     networks:
       xroad_net:
     ports:
